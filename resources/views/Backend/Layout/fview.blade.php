@@ -24,7 +24,7 @@
 @csrf
 
   <div class="form-group">
-    <label for="name">Your Name</label>
+    <label for="name">Your name</label>
     <input type="text" name="name" class="form-control"  placeholder="Enter Your Name Here">
   </div>
 
