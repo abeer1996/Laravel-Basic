@@ -16,6 +16,7 @@ class RegisterController extends Controller
 
     public function deletePeople($id)
     {
+        
         $deletePeople = Registration::find($id);
         $deletePeople->delete();
 

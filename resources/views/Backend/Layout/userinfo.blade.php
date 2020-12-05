@@ -3,10 +3,7 @@
 
 <main class="app-content">
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Add new people
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -56,38 +53,22 @@
   </div>
 </div>
 
-
-
-
-
-
-
 <table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Sl No.</th>
-      <th scope="col">Name</th>
-      <th scope="col">Phone Number</th>
-      <th scope="col">Participate Role</th>
+      <th scope="col">Payment Id</th>
+      <th scope="col">Student Id</th>
+      <th scope="col">Student Name</th>
+      <th scope="col">Payment Type</th>
+      <th scope="col">Course Fee</th>
+      <th scope="col">Receive Amount</th>
+      <th scope="col">Due Amount</th>
       <th scope="col">Action</th>
       <th scope="col"></th>
     </tr>
   </thead>
-  <tbody>
 
-  @foreach($peoples as $people)
-
-
-    <tr>
-      <td >{{$people->id}}</td>
-      <td>{{$people->name}}</td>
-      <td>{{$people->contact}}</td>
-      <td>{{$people->role}}</td>
-      <td><a href="#">Edit</a></td>
-      <td><a href="{{route('delete.people',$people->id)}}">Delete</a></td>
-    </tr>
-    @endforeach
-  </tbody>
 </table>
 
 

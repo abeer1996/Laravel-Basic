@@ -17,6 +17,7 @@ class CreateRegistrationsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('contact');
+            $table->string('role');
             $table->timestamps();
         });
     }

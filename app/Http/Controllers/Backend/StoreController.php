@@ -12,7 +12,9 @@ class StoreController extends Controller
     {
              $InfoStore = Registration::create([
                 'name' => $request->input('name'),
-                'contact' => $request->input('contact')
+                'contact' => $request->input('contact'),
+                'role' => $request->input('role')
+               
           ]); 
 
           return Redirect()->back();

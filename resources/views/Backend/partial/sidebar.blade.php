@@ -1,10 +1,10 @@
 
 <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="Backend/assets/img/kodeeo1.png" hight='60px' width='60px' alt="User Image">
         <div>
-          <p class="app-sidebar__user-name">John Doe</p>
-          <p class="app-sidebar__user-designation">Frontend Developer</p>
+          <p class="app-sidebar__user-name">Kodeeo</p>
+          <p class="app-sidebar__user-designation">Admin</p>
         </div>
       </div>
       <ul class="app-menu">
@@ -12,11 +12,14 @@
 
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Registration</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="{{route('register')}}"><i class="icon fa fa-circle-o"></i> Insert People</a></li>
-            <li><a class="treeview-item" href="{{route('fview')}}"><i class="icon fa fa-circle-o"></i> View People</a></li>
+          <li><a class="treeview-item" href="{{route('userinfo')}}"><i class="icon fa fa-circle-o"></i>User Info</a></li>
+            
+          <li><a class="treeview-item" href="{{route('register')}}"><i class="icon fa fa-circle-o"></i>Create Role</a></li>
+
+            <li><a class="treeview-item" href="{{route('fview')}}"><i class="icon fa fa-circle-o"></i>Add Registration</a></li>
           </ul>
         </li>
-        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Payment Info</span></a></li>
+        <li><a class="app-menu__item" href="{{route('payment')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Payment Info</span></a></li>
         
         
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Course Management</span><i class="treeview-indicator fa fa-angle-right"></i></a>
