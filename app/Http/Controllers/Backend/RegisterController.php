@@ -19,7 +19,6 @@ class RegisterController extends Controller
         
         $deletePeople = Registration::find($id);
         $deletePeople->delete();
-
         return Redirect()->back();
     }
 
